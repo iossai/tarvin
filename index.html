@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarvin — Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper:#F4F6FA; --surface:#FFF; --ink:#14161C; --ink-soft:#454B5A;
+    --ink-faint:#6E7488; --rule:#D9DEE9; --motion:#2145E6; --amber:#9A6410;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:#0F1116; --surface:#171A22; --ink:#EEF0F5; --ink-soft:#B2B8C6;
+      --ink-faint:#848B9C; --rule:#2A2F3B; --motion:#7593FF; --amber:#E8A34D;
+    }
+  }
+  * { box-sizing:border-box; }
+  body {
+    background:var(--paper); color:var(--ink); margin:0; padding:0 22px 90px;
+    font-family:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+    font-size:16.5px; line-height:1.65; -webkit-font-smoothing:antialiased;
+  }
+  .wrap { max-width:720px; margin:0 auto; }
+  header { padding:72px 0 6px; }
+  .eyebrow {
+    font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--ink-faint); margin:0 0 14px; font-weight:600;
+  }
+  h1 {
+    font-family:Archivo,sans-serif; font-weight:700; font-size:clamp(34px,6.5vw,48px);
+    line-height:1.06; letter-spacing:-.022em; margin:0 0 14px; text-wrap:balance;
+  }
+  .standfirst { font-size:18px; color:var(--ink-soft); margin:0; max-width:56ch; }
+  h2 {
+    font-family:Archivo,sans-serif; font-weight:700; font-size:21px; letter-spacing:-.012em;
+    margin:46px 0 14px; padding-top:20px; border-top:1px solid var(--rule);
+  }
+  h3 { font-family:Archivo,sans-serif; font-weight:600; font-size:16.5px; margin:24px 0 6px; }
+  p { margin:0 0 14px; color:var(--ink-soft); }
+  strong { color:var(--ink); font-weight:600; }
+  a { color:var(--motion); text-underline-offset:3px; }
+  ul { margin:0 0 14px; padding-left:22px; color:var(--ink-soft); }
+  li { margin-bottom:9px; }
+  .contact {
+    background:var(--surface); border:1px solid var(--rule); border-radius:12px;
+    padding:22px 24px; margin-top:30px;
+  }
+  .contact p:last-child { margin-bottom:0; }
+  .notice {
+    background:color-mix(in srgb, var(--amber) 12%, transparent);
+    border:1px dashed color-mix(in srgb, var(--amber) 55%, transparent);
+    border-radius:12px; padding:18px 20px; margin:0 0 14px;
+  }
+  .notice p { margin:0; }
+  footer {
+    margin-top:52px; padding-top:20px; border-top:1px solid var(--rule);
+    font-size:14px; color:var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Tarvin</p>
+  <h1>Support</h1>
+  <p class="standfirst">Tarvin records the miles you drive for work, so the deduction is there when you need it.</p>
+</header>
+
+<div class="contact">
+  <p><strong>Get in touch</strong></p>
+  <div class="notice"><p><strong>A support address is being set up</strong> and will be published here before Tarvin is released.</p></div>
+  <p>When it is, please include your iPhone model and iOS version if something is not working — it makes a problem much faster to place.</p>
+</div>
+
+<h2>Common questions</h2>
+
+<h3>A drive was not recorded automatically</h3>
+<p>Automatic detection needs <strong>Always</strong> location access. If location is set to “While Using the App”, Tarvin can measure a drive you start by hand but cannot notice one on its own. Check <strong>Settings → Tarvin → Location</strong>.</p>
+<p>Also confirm Auto-Detect is switched on inside the app. If you paused it, Tarvin will tell you — provided notifications are allowed.</p>
+
+<h3>Starting a trip when the car connects</h3>
+<p>Tarvin can begin recording when your phone connects to your car's audio system. Pick that trigger in the app's settings while you are connected to the car, so it can learn which device is yours.</p>
+
+<h3>My subscription is not showing on another device</h3>
+<p>Subscriptions follow the Apple Account that bought them. Sign in to the same account, open Tarvin, and Pro should appear on its own. If it does not, use <strong>Restore Purchases</strong> in the app's membership screen.</p>
+
+<h3>Moving to a new phone</h3>
+<p>Turn on <strong>iCloud Sync</strong> before you switch. Without it, your drives live only on the device that recorded them.</p>
+
+<h3>Deleting your data</h3>
+<p>Deleting the app removes everything on the device. If iCloud Sync was on, remove the synced copy in <strong>Settings → your name → iCloud → Manage Account Storage → Tarvin</strong>.</p>
+
+<h2>Privacy</h2>
+<p>Tarvin has no account, no servers, and no analytics. Your drives stay on your device unless you turn on iCloud Sync, in which case they go to your own private iCloud database.</p>
+<p>The full detail, including the one case where location data reaches Apple, is in the <a href="./privacy.html">Privacy Policy</a>.</p>
+
+<footer>
+  <p>Tarvin · <a href="./privacy.html">Privacy Policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
