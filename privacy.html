@@ -91,7 +91,7 @@
 <p>iCloud Sync is off unless you turn it on.</p>
 
 <h2>What leaves your device</h2>
-<p>Two things, and both go to Apple rather than to Tarvin.</p>
+<p>Three things, and none of them go to Tarvin — there is no Tarvin server for anything to be sent to.</p>
 
 <h3>Place names for your trips</h3>
 <p>To label where a drive started and ended, Tarvin asks Apple's geocoding service to turn coordinates into a place name. Those coordinates are sent to Apple and handled under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. This is the one case where location data leaves the device, and it is worth stating plainly rather than burying.</p>
@@ -99,14 +99,18 @@
 <h3>Your subscription</h3>
 <p>Purchases are handled entirely by Apple's App Store. Tarvin is told only whether a subscription is currently active. It never sees your name, payment details, or Apple Account.</p>
 
-<p>There is nothing else, because there is no Tarvin server for anything to be sent to.</p>
+<h3>A vehicle identification number, if you look one up</h3>
+<p>Pit Stop can fill in a vehicle's year, make and model from its VIN. If you use that feature, the VIN alone is sent to <a href="https://vpic.nhtsa.dot.gov/">vPIC</a>, the free public vehicle database run by the United States National Highway Traffic Safety Administration. Nothing identifying you or your device is sent with it.</p>
+<p>This only happens when you tap “Look Up Vehicle” or scan a VIN plate. It never runs on its own, and typing the year, make and model yourself works just as well.</p>
+
+<p>That is the complete list.</p>
 
 <h2>What Tarvin never collects</h2>
 <ul>
   <li>No name, email address, phone number or password — there is no account to create.</li>
   <li>No advertising identifiers, and no advertising.</li>
   <li>No analytics, telemetry, or crash-reporting services.</li>
-  <li>No third-party trackers or software development kits of any kind.</li>
+  <li>No third-party trackers or software development kits of any kind. The VIN lookup above is a direct request to a public government database, not an embedded service.</li>
   <li>Your data is never sold, rented, or shared. There is no one to share it with.</li>
 </ul>
 
